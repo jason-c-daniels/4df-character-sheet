@@ -3,11 +3,11 @@
 }
 
 .name-input {
-    font-family: 'Barlow',sans-serif;
-    width:100%;
-    border:none;
-    color:black;
-    font-weight:bold;
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+    border: none;
+    color: black;
+    font-weight: bold;
     font-size: var(--font-size);
     display: block;
     padding-left: 0.15em;
@@ -17,9 +17,9 @@ textarea {
     padding: 0.15em;
     font-size: var(--font-size);
     border: none;
-    overflow:hidden;
+    overflow: hidden;
     resize: none;
     display: block;
     width: 100%;
-    font-family: "Barlow",sans-serif;
+    font-family: "Barlow", sans-serif;
 }

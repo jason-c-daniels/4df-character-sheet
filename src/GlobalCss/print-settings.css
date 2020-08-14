@@ -40,42 +40,50 @@
         /* WebKit browsers */
         color: transparent;
     }
+
     :-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
         color: transparent;
     }
+
     ::-moz-placeholder {
         /* Mozilla Firefox 19+ */
         color: transparent;
     }
+
     :-ms-input-placeholder {
         /* Internet Explorer 10+ */
         color: transparent;
     }
+
     textarea::-webkit-input-placeholder {
         /* WebKit browsers */
         color: transparent;
     }
+
     textarea:-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
         color: transparent;
     }
+
     textarea::-moz-placeholder {
         /* Mozilla Firefox 19+ */
         color: transparent;
     }
+
     textarea:-ms-input-placeholder {
         /* Internet Explorer 10+ */
         color: transparent;
     }
+
     textarea::placeholder {
         color: transparent;
     }
 
     .noprint {
         display: none;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
 }

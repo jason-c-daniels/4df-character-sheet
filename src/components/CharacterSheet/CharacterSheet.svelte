@@ -13,10 +13,9 @@
     import Skills from "./Skills";
     import Stunts from "./Stunts";
     import RefreshAndFate from "./RefreshAndFate";
+
     export let character;
 </script>
-
-
 
 
 <div class="character-sheet">
@@ -28,7 +27,8 @@
                 <Aspects bind:aspects="{character.aspects}"/>
             </div>
             <div class="td">
-                <Attributes bind:attributes="{character.attributes}" bind:will={character.skills[18].value} bind:physique={character.skills[12].value}/>
+                <Attributes bind:attributes="{character.attributes}" bind:will={character.skills[18].value}
+                            bind:physique={character.skills[12].value}/>
             </div>
         </div>
 

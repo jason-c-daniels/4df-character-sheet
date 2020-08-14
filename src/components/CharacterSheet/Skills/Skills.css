@@ -1,5 +1,5 @@
 .skill-line {
-    font-family: 'Barlow',sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 11pt;
     margin-bottom: 0.5pt;
 }
@@ -15,8 +15,7 @@
 input[type="number"],
 input[type="number"]:active,
 input[type="number"]:hover,
-input[type="number"]:focus
-{
+input[type="number"]:focus {
     border-radius: 0;
     border: 1px solid white;
     border-bottom-color: black;
@@ -25,8 +24,7 @@ input[type="number"]:focus
 input[type="text"],
 input[type="text"]:active,
 input[type="text"]:hover,
-input[type="text"]:focus
-{
+input[type="text"]:focus {
     border-radius: 0;
     border: 1px solid white;
     font-size: 95%;

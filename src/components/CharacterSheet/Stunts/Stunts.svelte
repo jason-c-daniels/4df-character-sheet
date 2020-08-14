@@ -15,14 +15,15 @@
     ];
     let rows = 3;
     let stuntsHint = "Start with three stunts for free. You may buy additional stunts for 1 Refresh each, so long as your Refresh remains at 1 or above."
-    stuntsHint="";
+    stuntsHint = "";
 </script>
 
 <Section title="Stunts" hint="{stuntsHint}" indent="0.25in">
 
     {#each stunts as stunt,i}
         <div class="stunt">
-            <input type="text" maxlength="40" class="name-input" placeholder="Please name the stunt." bind:value={stunt.name}/>
+            <input type="text" maxlength="40" class="name-input" placeholder="Please name the stunt."
+                   bind:value={stunt.name}/>
             <textarea placeholder="Please describe the stunt."
                       bind:value="{stunt.description}"
                       maxlength="130"

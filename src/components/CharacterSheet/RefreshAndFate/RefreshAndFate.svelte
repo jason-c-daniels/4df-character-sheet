@@ -3,12 +3,12 @@
 </style>
 
 <script>
-    export let refresh=3;
-    export let fate=3;
+    export let refresh = 3;
+    export let fate = 3;
 </script>
 
 
-<div class="header" >
+<div class="header">
     <div style="display: inline-block">&nbsp;</div>
     <div class="refresh-points">
         <input

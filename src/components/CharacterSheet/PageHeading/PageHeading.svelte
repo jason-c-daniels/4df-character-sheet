@@ -4,7 +4,8 @@
 
 <script>
     import Logo from "./logo.svg"
-    export let name="";
+
+    export let name = "";
 </script>
 
 
@@ -14,16 +15,16 @@
             <span class="name-label">Name</span>
         </div>
         <div class="td bottom">
-                <input  class="name-input"
-                        maxlength="25"
-                        type="text"
-                        placeholder="Please enter a name"
-                        bind:value="{name}"
-                        style="" />
+            <input class="name-input"
+                   maxlength="25"
+                   type="text"
+                   placeholder="Please enter a name"
+                   bind:value="{name}"
+                   style=""/>
         </div>
         <div class="td bottom">
             <div class="logo">
-                <Logo height="100%" width="100%" />
+                <Logo height="100%" width="100%"/>
             </div>
         </div>
     </div>

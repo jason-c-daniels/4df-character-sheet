@@ -22,32 +22,32 @@
                 otherAspects: ["", ""]
             },
             skills: [
-                { name: 'Bows/Crossbow', value:0 },
-                { name: 'Detect Lies', value:0 },
-                { name: 'Disguise', value:0 },
-                { name: 'Driving (caravans, cattle)', value:0 },
-                { name: 'Etiquette', value:0 },
-                { name: 'Locks', value:0 },
-                { name: 'Lore (                                           )', value:0  },
-                { name: 'Lore (                                           )', value:0  },
-                { name: 'Lore (                                           )', value:0  },
-                { name: 'Melee Weapons', value:0 },
-                { name: 'Navigation', value:0 },
-                { name: 'Observation', value:0 },
-                { name: 'Persuasion', value:0 },
-                { name: 'Riding ', value:0 },
-                { name: 'Siege Weapons', value:0 },
-                { name: 'Sleight of Hand', value:0 },
-                { name: 'Smithing', value:0 },
-                { name: 'Stealth', value:0 },
-                { name: 'Strategy', value:0 },
-                { name: 'Survival', value:0 },
-                { name: 'Thrown Weapon', value:0 },
-                { name: 'Tracking ', value:0 },
-                { name: 'Tradecraft (                                )', value:0  },
-                { name: 'Tradecraft (                                )', value:0  },
-                { name: 'Tradecraft (                                )', value:0  },
-                { name: 'Unarmed Combat', value:0 }
+                {name: 'Bows/Crossbow', value: 0},
+                {name: 'Detect Lies', value: 0},
+                {name: 'Disguise', value: 0},
+                {name: 'Driving (caravans, cattle)', value: 0},
+                {name: 'Etiquette', value: 0},
+                {name: 'Locks', value: 0},
+                {name: 'Lore (                                           )', value: 0},
+                {name: 'Lore (                                           )', value: 0},
+                {name: 'Lore (                                           )', value: 0},
+                {name: 'Melee Weapons', value: 0},
+                {name: 'Navigation', value: 0},
+                {name: 'Observation', value: 0},
+                {name: 'Persuasion', value: 0},
+                {name: 'Riding ', value: 0},
+                {name: 'Siege Weapons', value: 0},
+                {name: 'Sleight of Hand', value: 0},
+                {name: 'Smithing', value: 0},
+                {name: 'Stealth', value: 0},
+                {name: 'Strategy', value: 0},
+                {name: 'Survival', value: 0},
+                {name: 'Thrown Weapon', value: 0},
+                {name: 'Tracking ', value: 0},
+                {name: 'Tradecraft (                                )', value: 0},
+                {name: 'Tradecraft (                                )', value: 0},
+                {name: 'Tradecraft (                                )', value: 0},
+                {name: 'Unarmed Combat', value: 0}
             ],
             stunts: [
                 {name: "", description: ""},
@@ -58,12 +58,12 @@
                 {name: "", description: ""}
             ],
             attributes: {
-                strength: { value:0, stressTaken:0 },
-                endurance: { value:0, stressTaken:0 },
-                agility: { value:0, stressTaken:0 },
-                intelligence: { value:0, stressTaken:0 },
-                willpower: { value:0, stressTaken:0 },
-                perception: { value:0, stressTaken:0 },
+                strength: {value: 0, stressTaken: 0},
+                endurance: {value: 0, stressTaken: 0},
+                agility: {value: 0, stressTaken: 0},
+                intelligence: {value: 0, stressTaken: 0},
+                willpower: {value: 0, stressTaken: 0},
+                perception: {value: 0, stressTaken: 0},
                 consequences: {
                     mild1: "",
                     moderate: "",
@@ -102,7 +102,7 @@
 
     }
 
-    function printCharacter(e){
+    function printCharacter(e) {
         print();
     }
 
@@ -132,7 +132,7 @@
 <main on:keys.escape={cancelLoad}>
     {#if (showLoadPane)}
         <div class="noprint file-loader" on:keys.escape={cancelLoad}>
-            <Dropzone on:drop={handleFilesSelect} on:keys.escape={cancelLoad} containerStyles="height:100%"	/>
+            <Dropzone on:drop={handleFilesSelect} on:keys.escape={cancelLoad} containerStyles="height:100%"/>
         </div>
     {/if}
     <CharacterSheet {character}/>

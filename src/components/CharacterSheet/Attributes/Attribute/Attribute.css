@@ -5,13 +5,14 @@ span {
 .stress-track-title {
     font-size: 10pt;
     text-transform: uppercase;
-    text-align:right;
-    width:auto;
-    color:black;
-    font-weight:500;
-    font-family:'Barlow Condensed',sans-serif;
+    text-align: right;
+    width: auto;
+    color: black;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', sans-serif;
 }
-.stress-track-title:after{
+
+.stress-track-title:after {
     clear: both;
     display: block;
 }
@@ -19,7 +20,7 @@ span {
 .title-column {
     margin: 1pt 1pt;
     padding: 3px;
-    display:table-cell;
+    display: table-cell;
 }
 
 .column {
@@ -30,7 +31,7 @@ span {
 .column {
     margin: 1pt 0.5pt;
     padding: 0;
-    display:table-cell;
+    display: table-cell;
 }
 
 /* Clear floats after the columns */
@@ -39,10 +40,11 @@ span {
     display: table;
     clear: both;
 }
+
 .row {
     position: relative;
     width: 100%;
-    display:table-row;
+    display: table-row;
 }
 
 .attr-value {
@@ -57,8 +59,7 @@ span {
 input[type="number"],
 input[type="number"]:active,
 input[type="number"]:hover,
-input[type="number"]:focus
-{
+input[type="number"]:focus {
     border-radius: 0;
     border: 1px solid white;
     border-bottom-color: black;

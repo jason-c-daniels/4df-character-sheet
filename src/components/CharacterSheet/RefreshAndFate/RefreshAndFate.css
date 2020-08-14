@@ -1,5 +1,5 @@
-:root{
-    --circle-radius:1.6em;
+:root {
+    --circle-radius: 1.6em;
     --header-font-height: 24pt;
     --header-span-height: calc(var(--header-font-height) * 5 / 6);
     --header-padding-top: calc(var(--header-font-height) * 1 / 6 - 2);
@@ -100,7 +100,7 @@ input[type="number"] {
 
     text-transform: uppercase;
     margin-top: 32pt;
-    margin-bottom:32pt;
+    margin-bottom: 32pt;
 }
 
 .header span {
@@ -111,6 +111,6 @@ input[type="number"] {
 }
 
 .header:after {
-    clear:both;
-    display:block;
+    clear: both;
+    display: block;
 }

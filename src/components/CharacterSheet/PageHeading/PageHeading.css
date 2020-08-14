@@ -1,21 +1,22 @@
 .name-input {
-    font-family: 'Barlow Condensed',sans-serif;
-    width:110%;
-    border:none;
-    color:black;
-    font-size:36pt;
-    font-weight:900;
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 110%;
+    border: none;
+    color: black;
+    font-size: 36pt;
+    font-weight: 900;
 }
 
 .top {
     vertical-align: top;
 }
+
 .bottom {
     vertical-align: bottom;
 }
 
 .name-label {
-    font-family: "Gothic A1 Black",sans-serif;
+    font-family: "Gothic A1 Black", sans-serif;
     margin-left: 0.75in;
     text-transform: uppercase;
 }
