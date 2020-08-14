@@ -58,8 +58,12 @@
                 {name: "", description: ""}
             ],
             attributes: {
-                physicalStressTaken: 0,
-                mentalStressTaken: 0,
+                strength: { value:0, stressTaken:0 },
+                endurance: { value:0, stressTaken:0 },
+                agility: { value:0, stressTaken:0 },
+                intelligence: { value:0, stressTaken:0 },
+                willpower: { value:0, stressTaken:0 },
+                perception: { value:0, stressTaken:0 },
                 consequences: {
                     mild1: "",
                     moderate: "",

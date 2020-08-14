@@ -8,8 +8,12 @@
     import Section from '../Section';
 
     export let attributes = {
-        physicalStressTaken: 0,
-        mentalStressTaken: 0,
+        strength: { value:0, stressTaken:0 },
+        endurance: { value:0, stressTaken:0 },
+        agility: { value:0, stressTaken:0 },
+        intelligence: { value:0, stressTaken:0 },
+        willpower: { value:0, stressTaken:0 },
+        perception: { value:0, stressTaken:0 },
         consequences: {
             mild1: "",
             moderate: "",
@@ -38,16 +42,16 @@
         </div>
         <div style="width:50%; float: left">
 
-            <Attribute name="Strength" bind:stressTaken="{attributes.physicalStressTaken}"/>
-            <Attribute name="Endurance" bind:stressTaken="{attributes.mentalStressTaken}"/>
-            <Attribute name="Agiility" bind:stressTaken="{attributes.mentalStressTaken}"/>
+            <Attribute name="Strength" bind:stressTaken="{attributes.strength.stressTaken}" bind:value={attributes.strength.value}/>
+            <Attribute name="Endurance" bind:stressTaken="{attributes.endurance.stressTaken}" bind:value={attributes.endurance.value}/>
+            <Attribute name="Agility" bind:stressTaken="{attributes.agility.stressTaken}" bind:value={attributes.agility.value}/>
 
         </div>
         <div style="width:50%; float: left; clear-after: both;border-left-color: black; border-left-style: solid; border-left-width: 1pt;">
 
-            <Attribute name="Intelligence" bind:stressTaken="{attributes.physicalStressTaken}"/>
-            <Attribute name="Willpower" bind:stressTaken="{attributes.mentalStressTaken}"/>
-            <Attribute name="Perception" bind:stressTaken="{attributes.mentalStressTaken}"/>
+            <Attribute name="Intelligence" bind:stressTaken="{attributes.intelligence.stressTaken}" bind:value={attributes.intelligence.value}/>
+            <Attribute name="Willpower" bind:stressTaken="{attributes.willpower.stressTaken}" bind:value={attributes.willpower.value}/>
+            <Attribute name="Perception" bind:stressTaken="{attributes.perception.stressTaken}" bind:value={attributes.perception.value}/>
 
         </div>
     </div>

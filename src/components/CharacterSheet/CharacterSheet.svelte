@@ -5,7 +5,7 @@
 <script>
     import PageHeading from "./PageHeading";
     import Aspects from "./Aspects";
-    import Vitals from "./Attributes";
+    import Attributes from "./Attributes";
     import Skills from "./Skills";
     import Stunts from "./Stunts";
     import RefreshAndFate from "./RefreshAndFate";
@@ -21,7 +21,7 @@
                 <Aspects bind:aspects="{character.aspects}"/>
             </div>
             <div class="td">
-                <Vitals bind:vitals="{character.vitals}" bind:will={character.skills[18].value} bind:physique={character.skills[12].value}/>
+                <Attributes bind:attributes="{character.attributes}" bind:will={character.skills[18].value} bind:physique={character.skills[12].value}/>
             </div>
         </div>
 
