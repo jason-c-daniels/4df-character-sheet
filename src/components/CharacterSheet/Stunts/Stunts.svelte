@@ -15,9 +15,10 @@
     ];
     let rows = 3;
     let stuntsHint = "Start with three stunts for free. You may buy additional stunts for 1 Refresh each, so long as your Refresh remains at 1 or above."
+    stuntsHint="";
 </script>
 
-<Section title="Stunts" hint="{stuntsHint}" indent="0.75in">
+<Section title="Stunts" hint="{stuntsHint}" indent="0.25in">
 
     {#each stunts as stunt,i}
         <div class="stunt">
@@ -29,3 +30,5 @@
         </div>
     {/each}
 </Section>
+
+<br/>

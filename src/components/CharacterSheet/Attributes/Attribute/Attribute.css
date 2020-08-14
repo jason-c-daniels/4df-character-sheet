@@ -1,15 +1,19 @@
 span {
-    float: right;
+    float: left;
 }
 
 .stress-track-title {
-    font-size: 12pt;
+    font-size: 10pt;
     text-transform: uppercase;
     text-align:right;
     width:auto;
     color:black;
     font-weight:500;
     font-family:'Barlow Condensed',sans-serif;
+}
+.stress-track-title:after{
+    clear: both;
+    display: block;
 }
 
 .title-column {
@@ -19,7 +23,7 @@ span {
 }
 
 .column {
-    width: 1.5em;
+    width: 1.0em;
 }
 
 .last-col,
@@ -39,4 +43,23 @@ span {
     position: relative;
     width: 100%;
     display:table-row;
+}
+
+.attr-value {
+    font-family: 'Gothic A1 Black', sans-serif;
+    width: 2.8em;
+    margin-left: 1.5pt;
+    margin-right: 3pt;
+    border-bottom-width: 1.5pt;
+    float: left
+}
+
+input[type="number"],
+input[type="number"]:active,
+input[type="number"]:hover,
+input[type="number"]:focus
+{
+    border-radius: 0;
+    border: 1px solid white;
+    border-bottom-color: black;
 }

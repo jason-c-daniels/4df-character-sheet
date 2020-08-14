@@ -5,7 +5,7 @@
 <script>
     import Section from '../Section';
     export let aspects={
-        highConcept:"",
+        concept:"",
         trouble:"",
         relationship:"",
         otherAspects:["",""]
@@ -13,13 +13,13 @@
     let rows=2;
 </script>
 
-<Section title="Aspects" indent="0.75in">
-    <div class="aspect">
+<Section title="Aspects" indent="0.25in">
+    <div class="aspect" style="width: 3.5in">
     <label class="aspect-label">
-        <span>High Concept</span>
+        <span>Concept</span>
     </label>
         <textarea placeholder="Please describe the character concept."
-                  bind:value="{aspects.highConcept}"
+                  bind:value="{aspects.concept}"
                   rows="{rows}"
                   maxlength="110"
         ></textarea>

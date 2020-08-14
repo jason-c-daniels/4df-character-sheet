@@ -5,7 +5,7 @@
 <script>
     import PageHeading from "./PageHeading";
     import Aspects from "./Aspects";
-    import Vitals from "./Vitals";
+    import Vitals from "./Attributes";
     import Skills from "./Skills";
     import Stunts from "./Stunts";
     import RefreshAndFate from "./RefreshAndFate";
