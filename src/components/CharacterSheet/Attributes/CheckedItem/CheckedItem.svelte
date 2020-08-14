@@ -12,7 +12,7 @@
 <script>
     import {createEventDispatcher} from 'svelte'
     import Check from './small-check.svg';
-    export let number = " ";
+    export let number = "1";
     export let css = defaultCss;
     export let checked;
     const dispatch = createEventDispatcher();

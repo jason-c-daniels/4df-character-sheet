@@ -2,6 +2,10 @@
     @import "CharacterSheet.css";
 </style>
 
+<script context="module">
+    export
+</script>
+
 <script>
     import PageHeading from "./PageHeading";
     import Aspects from "./Aspects";
@@ -11,6 +15,9 @@
     import RefreshAndFate from "./RefreshAndFate";
     export let character;
 </script>
+
+
+
 
 <div class="character-sheet">
     <PageHeading bind:name="{character.name}"/>
