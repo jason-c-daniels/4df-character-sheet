@@ -10,9 +10,14 @@
     $: count = Math.trunc(1 + value / 2);
     let css={...CSS,color:'black', size:"1.0em"};
     let grayCss={...css,color:'gray',size:"1.0em"};
-
+    $: if (stressTaken > count) stressTaken=count;
     function handleCheckedChanged(event) {
-        stressTaken += event.detail.checked ? 1 : -1;
+        if (stressTaken === count && event.detail.checked){
+            stressTaken=stressTaken -1;
+        }
+        else {
+            stressTaken += event.detail.checked ? 1 : -1;
+        }
     }
 </script>
 
