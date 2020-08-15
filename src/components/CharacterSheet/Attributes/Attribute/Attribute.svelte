@@ -41,7 +41,7 @@
     <div style="padding-left: 1em">
         {#each Array(6) as _, i}
             <div class="column">
-                <CheckedItem css="{i<count ? css: grayCss}" number="1" checked="{i < stressTaken}"
+                <CheckedItem css="{i<count ? css: grayCss}" number=" " checked="{i < stressTaken}"
                              on:checkedChanged={handleCheckedChanged}/>
             </div>
         {/each}

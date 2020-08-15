@@ -1,27 +1,33 @@
 .name-input {
     font-family: 'Barlow Condensed', sans-serif;
-    width: 110%;
+    width: 100%;
     border: none;
     color: black;
-    font-size: 36pt;
+    font-size: 16pt;
     font-weight: 900;
+    height:50%;
+    margin-left: 0.5em;
 }
-
-.top {
-    vertical-align: top;
+.regular-input {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 100%;
+    border: none;
+    color: black;
+    font-size: 16pt;
+    font-weight: 400;
+    height:50%;
+    margin-left: 0.5em;
 }
-
-.bottom {
-    vertical-align: bottom;
-}
-
 .name-label {
     font-family: "Gothic A1 Black", sans-serif;
-    margin-left: 0.75in;
     text-transform: uppercase;
+    ;
 }
 
 .logo {
-    height: 60px;
-    margin-right: 0.5in;
+    height: 50px;
+    width: 110px;
+    margin-right: 0.25in;
+
+
 }

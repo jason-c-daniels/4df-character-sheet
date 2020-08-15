@@ -1,4 +1,4 @@
-.aspect-label {
+.trait-label {
     font-family: "Gothic A1 Black", sans-serif;
     text-transform: uppercase;
     width: 100%;
@@ -7,7 +7,7 @@
     font-weight: 900;
 }
 
-.aspect {
+.trait {
     width: 100%;
     margin-bottom: 1em;
 }

@@ -39,7 +39,7 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-.refresh-label {
+.reset-label {
     width: auto;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 900;
@@ -52,37 +52,37 @@ input[type="number"] {
     display: inline-block;
 }
 
-.refresh-label,
-.refresh-points {
+.reset-label,
+.reset-points {
     float: left;
 }
 
-.refresh-points {
+.reset-points {
     position: absolute;
     width: auto;
     left: 0.3em;
     top: -1.3em;
 }
 
-.fate-label {
+.luck-label {
     width: 50%;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0%;
-    right: -1.2em;
+    right: -1.0em;
     bottom: -4px;
     text-align: right;
     position: absolute;
     display: block;
 }
 
-.fate-label,
-.fate-points {
+.luck-label,
+.luck-points {
     float: right;
 }
 
-.fate-points {
+.luck-points {
     position: absolute;
     width: auto;
     right: 0.5em;

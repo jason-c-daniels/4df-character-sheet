@@ -1,5 +1,5 @@
 <style>
-    @import "Consequence.css";
+    @import "Wound.css";
 </style>
 
 <script>
@@ -22,6 +22,6 @@
     </div>
     <div class="column" style="padding-left:1em; width:90%;">
         <label class="title"><span>{name}</span></label>
-        <textarea maxlength="70" rows=2 bind:value={description} placeholder="Please state the consequence"></textarea>
+        <textarea maxlength="70" rows=2 bind:value={description} placeholder="Please describe the wound"></textarea>
     </div>
 </div>

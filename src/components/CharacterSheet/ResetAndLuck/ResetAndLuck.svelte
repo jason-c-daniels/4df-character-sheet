@@ -1,16 +1,16 @@
 <style>
-    @import "RefreshAndFate.css";
+    @import "ResetAndLuck.css";
 </style>
 
 <script>
-    export let refresh = 3;
-    export let fate = 3;
+    export let reset = 3;
+    export let luck = 3;
 </script>
 
 
 <div class="header">
     <div style="display: inline-block">&nbsp;</div>
-    <div class="refresh-points">
+    <div class="reset-points">
         <input
                 maxlength="1"
                 class="circle"
@@ -18,16 +18,16 @@
                 step={1}
                 min={0}
                 max={10}
-                bind:value={refresh}
+                bind:value={reset}
         />
     </div>
-    <div class="refresh-label">
-        <span style="margin-left:5.3em">Refresh</span>
+    <div class="reset-label">
+        <span style="margin-left:5.3em">Reset</span>
     </div>
-    <div class="fate-label">
-        <span style="margin-right:5.3em">Fate</span>
+    <div class="luck-label">
+        <span style="margin-right:5.3em">Luck</span>
     </div>
-    <div class="fate-points">
+    <div class="luck-points">
         <input
                 maxlength="1"
                 class="circle"
@@ -35,7 +35,7 @@
                 step={1}
                 min={0}
                 max={10}
-                bind:value={fate}
+                bind:value={luck}
         />
     </div>
 </div>

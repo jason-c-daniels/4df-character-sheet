@@ -4,7 +4,7 @@
 
 <script>
     import Attribute from "./Attribute";
-    import Consequence from "./Consequence";
+    import Consequence from "./Wound";
     import Section from '../Section';
 
     export let attributes = {
@@ -15,10 +15,9 @@
         willpower: {value: 0, stressTaken: 0},
         perception: {value: 0, stressTaken: 0},
         consequences: {
-            mild1: "",
+            minor: "",
             moderate: "",
             severe: "",
-            mild2: "",
         }
     };
     export let will = 0;
@@ -64,11 +63,11 @@
     <div style="clear:both; clear-after: both; display: block; position: relative">
         <div class="row subheading">
             <br/>
-            <span style="font-weight: bold">CONSEQUENCES</span>
+            <span style="font-weight: bold">Wounds</span>
         </div>
 
-        <Consequence name="Mild" isExtra="false" value="2" bind:description="{attributes.consequences.mild1}"/>
-        <Consequence name="Moderate" isExtra="false" value="4" bind:description="{attributes.consequences.moderate}"/>
-        <Consequence name="Severe" isExtra="false" value="6" bind:description="{attributes.consequences.severe}"/>
+        <Consequence name="Minor" isExtra="false" value="-2" bind:description="{attributes.consequences.minor}"/>
+        <Consequence name="Moderate" isExtra="false" value="-4" bind:description="{attributes.consequences.moderate}"/>
+        <Consequence name="Severe" isExtra="false" value="-6" bind:description="{attributes.consequences.severe}"/>
     </div>
 </Section>

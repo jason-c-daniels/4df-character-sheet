@@ -13,13 +13,15 @@
     function getNewCharacter() {
         return {
             name: "",
-            fate: 3,
-            refresh: 3,
-            aspects: {
+            species: "",
+            role: "",
+            luck: 3,
+            reset: 3,
+            traits: {
                 concept: "",
-                trouble: "",
+                problem: "",
                 relationship: "",
-                otherAspects: ["", ""]
+                otherTraits: ["", ""]
             },
             skills: [
                 {name: 'Bows/Crossbow', value: 0},
@@ -49,7 +51,7 @@
                 {name: 'Tradecraft (                                )', value: 0},
                 {name: 'Unarmed Combat', value: 0}
             ],
-            stunts: [
+            abilities: [
                 {name: "", description: ""},
                 {name: "", description: ""},
                 {name: "", description: ""},
@@ -65,10 +67,9 @@
                 willpower: {value: 0, stressTaken: 0},
                 perception: {value: 0, stressTaken: 0},
                 consequences: {
-                    mild1: "",
+                    minor: "",
                     moderate: "",
-                    severe: "",
-                    mild2: "",
+                    severe: ""
                 }
             }
         };
@@ -115,7 +116,11 @@
 </style>
 
 <svelte:head>
-    <title>{appSettings.applicationName}</title>
+    {#if (character.name?.length > 0)}
+        <title>{character.name} - {appSettings.applicationName}</title>
+    {:else}
+        <title>{appSettings.applicationName}</title>
+    {/if}
 </svelte:head>
 
 <GlobalCss/>
